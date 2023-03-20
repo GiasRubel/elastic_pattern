@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Polymorphism;
+
+class Author extends Book
+{
+    public function calcAmount($amount)
+    {
+        $setTk = $this->setTk($amount);
+
+        return $res = $this->getTk() + 100;
+
+    }
+}
