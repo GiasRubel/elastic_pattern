@@ -167,7 +167,8 @@ return [
         /*
          * Package Service Providers...
          */
-        gias\comments\CommentServiceProvider::class,
+
+        GiasRubel\comments\CommentServiceProvider::class,
 
         /*
          * Application Service Providers...

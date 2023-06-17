@@ -1,6 +1,6 @@
 <?php
 
-namespace gias\comments;
+namespace GiasRubel\comments;
 
 use Illuminate\Support\ServiceProvider;
 

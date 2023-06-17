@@ -1,5 +1,5 @@
 {
-    "name": "laravel/laravel",
+    "name": "GiasRubel/comments",
     "type": "project",
     "description": "The Laravel Framework.",
     "keywords": ["framework", "laravel"],
@@ -26,7 +26,7 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
-            "gias\\comments\\": "packages/gias/comments/src/"
+            "GiasRubel\\comments\\": "packages/GiasRubel/comments/src/"
         }
     },
     "autoload-dev": {

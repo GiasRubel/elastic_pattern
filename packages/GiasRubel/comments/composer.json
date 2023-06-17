@@ -1,0 +1,19 @@
+{
+    "name": "GiasRubel/comments",
+    "description": "A Laravel package for commenting on the database.",
+    "authors": [
+        {
+            "name": "GiasRubel",
+            "email": "gias.rubel@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Gias\\Comments\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
