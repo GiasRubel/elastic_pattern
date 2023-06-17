@@ -40,47 +40,5 @@ Route::get('/pay-by-pal', function (\App\PaymentProcessorInterface $paymentProce
 Route::get('/pay', [\App\Http\Controllers\PaymentController::class, 'index']);
 
 Route::get('/', function () {
-    $hosts = [
-        [
-            'host' => 'localhost',
-            'port' => 9200,
-            'scheme' => 'http',
-        ]
-    ];
-
-    $client = ClientBuilder::create()
-        ->setHosts($hosts)
-        ->build();
-
-    $response = $client->info();
-
-    echo $response['version']['number'];
-
-    dd( $response['version']['number']);
-
-
-    $params = [
-        'index' => 'my_index',
-        'body' => [
-            'settings' => [
-                'number_of_shards' => 1,
-                'number_of_replicas' => 0,
-            ],
-            'mappings' => [
-                'properties' => [
-                    'title' => [
-                        'type' => 'text',
-                    ],
-                    'description' => [
-                        'type' => 'text',
-                    ],
-                ],
-            ],
-        ],
-    ];
-
-    $response = $client->indices()->create($params);
-
-    return $response;
-   // return view('welcome');
+    return view('welcome');
 });

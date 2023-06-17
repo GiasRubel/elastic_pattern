@@ -1,0 +1,16 @@
+{
+    "name": "gias/comments",
+    "description": "This package use for commenting on db",
+    "autoload": {
+        "psr-4": {
+            "Gias\\Comments\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gias"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

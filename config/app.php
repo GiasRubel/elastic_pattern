@@ -1,5 +1,7 @@
 <?php
 
+use App\Providers\CustomerRepositoryProvider;
+
 return [
 
     /*
@@ -39,7 +41,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool)env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -165,6 +167,7 @@ return [
         /*
          * Package Service Providers...
          */
+        gias\comments\CommentServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -175,7 +178,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        \App\Providers\CustomerRepositoryProvider::class,
+        CustomerRepositoryProvider::class,
 
     ],
 
